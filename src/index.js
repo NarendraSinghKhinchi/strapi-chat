@@ -8,7 +8,7 @@ module.exports = {
   bootstrap(/* { strapi } */) {
     const io = new Server(strapi.server.httpServer, {
       cors: {
-        origin: "http://localhost:3000",
+        origin: "https://chat-app-one-lyart.vercel.app",
         methods: ["GET", "POST"],
         allowedHeaders: ["Authorization", "my-custom-header"],
         credentials: true,
